@@ -1,6 +1,5 @@
 // Hacer la conexion
-var Port = process.env.PORT || 4000;
-var socket = io.connect('https://elchat.herokuapp.com/:' + Port);
+var socket = io.connect('https://elchat.herokuapp.com/' );
 
 // Query Dom
 var message = document.getElementById('message'),
