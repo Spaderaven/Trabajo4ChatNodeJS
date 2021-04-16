@@ -32,10 +32,10 @@ message.addEventListener('keypress', function(){
 socket.on('chat', function(data) {
     feedback.innerHTML = "";
     message.innerHTML = "";
-    output.innerHTML += "<p><strong>" + data.handle + ":</strong>" + data.message + "</p>";
+    output.innerHTML += "<p><strong>😃 " + data.handle + ":</strong>" + data.message + "</p>";
 });
 
 
 socket.on('typing', function(data){
-    feedback.innerHTML = "<p><em>" + data + " esta escribiendo...</em> </p>";
+    feedback.innerHTML = "<p><em>" + data + " esta escribiendo... 💬</em> </p>";
 })
